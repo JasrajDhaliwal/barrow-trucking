@@ -29,15 +29,15 @@ nav ul a:hover{border-color:var(--hivis)}
 .callbtn:hover{background:var(--paper)}
 
 /* hero */
-.hero{position:relative;padding:64px 0 0;border-bottom:3px solid var(--ink);background:var(--ink);color:var(--paper);overflow:hidden}
+.hero{position:relative;padding:36px 0 0;border-bottom:3px solid var(--ink);background:var(--ink);color:var(--paper);overflow:hidden}
 .hero-bg{position:absolute;inset:0;background:url(../img/lineup.jpg) 62% 40%/cover;filter:contrast(1.05);opacity:.85}
 .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(21,20,15,.94) 0%,rgba(21,20,15,.72) 42%,rgba(21,20,15,.1) 100%),linear-gradient(0deg,rgba(21,20,15,.9),transparent 30%)}
 .hero-grid{position:relative;display:grid;grid-template-columns:1.35fr .65fr;gap:40px;align-items:end}
-.hero h1{font-size:clamp(64px,9.4vw,150px);margin-left:-4px}
+.hero h1{font-size:clamp(56px,7.6vw,120px);margin-left:-4px}
 .hero h1 span{display:block}
 .hero h1 .hl{background:var(--hivis);color:var(--ink);display:inline-block;padding:0 .08em;transform:rotate(-1.2deg);box-shadow:6px 6px 0 var(--paper)}
-.hero .lede{max-width:520px;margin:28px 0 32px;font-size:19px;color:#e8e2d4}
-.eyebrow{font-family:var(--mono);text-transform:uppercase;letter-spacing:.12em;font-size:12px;display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.hero .lede{max-width:520px;margin:20px 0 24px;font-size:18px;color:#e8e2d4}
+.eyebrow{margin-bottom:14px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.12em;font-size:12px;display:flex;align-items:center;gap:12px;margin-bottom:18px}
 .eyebrow::before{content:"";width:34px;height:3px;background:var(--rust)}
 .eyebrow.light::before{background:var(--hivis)}
 .btnrow{display:flex;gap:14px;flex-wrap:wrap}
@@ -50,7 +50,7 @@ nav ul a:hover{border-color:var(--hivis)}
 .btn.hi:hover,.btn.ghost:hover{box-shadow:5px 5px 0 var(--paper)}
 
 /* ticket */
-.ticket{background:#f6f2e7;color:var(--ink);border:1.5px solid var(--ink);padding:22px 22px 26px;font-family:var(--mono);font-size:13px;position:relative;transform:rotate(1.6deg);box-shadow:10px 10px 0 rgba(0,0,0,.85);margin-bottom:34px}
+.ticket{background:#f6f2e7;color:var(--ink);border:1.5px solid var(--ink);padding:22px 22px 26px;font-family:var(--mono);font-size:13px;position:relative;transform:rotate(1.6deg);box-shadow:10px 10px 0 rgba(0,0,0,.85);margin-bottom:20px}
 .ticket::before,.ticket::after{content:"";position:absolute;left:0;right:0;height:10px;background:radial-gradient(circle at 6px 0,transparent 5px,#f6f2e7 5.5px) 0 0/12px 10px repeat-x}
 .ticket::before{top:-9px;transform:scaleY(-1)}
 .ticket::after{bottom:-9px}
@@ -62,10 +62,10 @@ nav ul a:hover{border-color:var(--hivis)}
 .stamp{position:absolute;right:14px;bottom:16px;border:3px solid var(--rust);color:var(--rust);font-family:var(--display);font-size:26px;padding:0 10px;transform:rotate(-12deg);text-transform:uppercase;opacity:.85;letter-spacing:.04em}
 
 /* road + tape */
-.road{position:relative;margin-top:56px;height:110px;background:var(--ink);overflow:hidden;border-top:2px solid rgba(232,226,212,.15)}
-.road::before{content:"";position:absolute;left:0;right:0;top:78px;height:5px;background:repeating-linear-gradient(90deg,var(--hivis) 0 46px,transparent 46px 92px);animation:dash 1.4s linear infinite}
+.road{position:relative;margin-top:28px;height:72px;background:var(--ink);overflow:hidden;border-top:2px solid rgba(232,226,212,.15)}
+.road::before{content:"";position:absolute;left:0;right:0;top:56px;height:5px;background:repeating-linear-gradient(90deg,var(--hivis) 0 46px,transparent 46px 92px);animation:dash 1.4s linear infinite}
 @keyframes dash{to{background-position:-92px 0}}
-.road svg{position:absolute;bottom:30px;left:0;width:300px;animation:drive 14s linear infinite}
+.road svg{position:absolute;bottom:20px;left:0;width:300px;animation:drive 14s linear infinite}
 @keyframes drive{from{transform:translateX(-320px)}to{transform:translateX(100vw)}}
 .wheel{animation:spin .5s linear infinite;transform-box:fill-box;transform-origin:center}
 @keyframes spin{to{transform:rotate(360deg)}}
